@@ -3,8 +3,7 @@ function handleException(message: string): never {
 }
 // console.log(handleException("This is an error message"));
 
-function printOnConsole(message: string): void {
+const printOnConsole = (message: string): void => {
     console.log(message);
 }
 printOnConsole("Hello world!!!");
-
