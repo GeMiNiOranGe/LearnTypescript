@@ -1,4 +1,19 @@
 /**
+ * Count the number of duplicate elements.
+ * @param args Array of elements.
+ * @returns `{element: numberOfDuplicate, ... }`
+ */
+export function countDuplicateElements(...args: any[]): object {
+    let initialValue = {};
+    return args.reduce((accumulator, currentValue) => {
+        accumulator[currentValue] = (accumulator[currentValue] ?? 0) + 1;
+        return accumulator;
+    }, initialValue);
+}
+console.log("Number count   :", countDuplicateElements(...[11, 21, 11, 19, 46, 46, 19, 21]));
+console.log("Number count   :", countDuplicateElements(11, 21, 11, 19, 46, 46, 19, 21));
+
+/**
  * Create a character-separated string.
  * 
  * Example: `hello world` => `.h..e..l..l..o.. ..w..o..r..l..d.`.
