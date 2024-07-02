@@ -10,8 +10,8 @@ export function countDuplicateElements(...args: any[]): object {
         return accumulator;
     }, initialValue);
 }
-console.log("Number count   :", countDuplicateElements(...[11, 21, 11, 19, 46, 46, 19, 21]));
-console.log("Number count   :", countDuplicateElements(11, 21, 11, 19, 46, 46, 19, 21));
+// console.log("Number count   :", countDuplicateElements(...[11, 21, 11, 19, 46, 46, 19, 21]));
+// console.log("Number count   :", countDuplicateElements(11, 21, 11, 19, 46, 46, 19, 21));
 
 /**
  * Create a character-separated string.
