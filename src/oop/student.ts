@@ -1,3 +1,4 @@
+import { NotPositiveNumberException } from "./custom_exception";
 import Person from "./person";
 
 export default class Student extends Person {
@@ -12,6 +13,9 @@ export default class Student extends Person {
         return this._grade;
     }
     public set grade(v: number | undefined) {
+        if (typeof v !== "undefined" && v < 0) {
+            throw new NotPositiveNumberException("grade");
+        }
         this._grade = v;
     }
 

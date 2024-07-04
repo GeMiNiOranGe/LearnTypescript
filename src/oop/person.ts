@@ -1,3 +1,5 @@
+import { NotPositiveNumberException } from "./custom_exception";
+
 export default class Person {
     private _name: string;
     private _age?: number;
@@ -22,6 +24,9 @@ export default class Person {
         return this._age;
     }
     public set age(v: number | undefined) {
+        if (typeof v !== "undefined" && v < 0) {
+            throw new NotPositiveNumberException("age");
+        }
         this._age = v;
     }
 
