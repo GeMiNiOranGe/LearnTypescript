@@ -15,7 +15,7 @@ export default class Student extends Person {
         this._grade = v;
     }
 
-    public toString(): string {
+    public override toString(): string {
         return `${super.toString()},\tgrade: ${this._grade}`;
     }
 }
