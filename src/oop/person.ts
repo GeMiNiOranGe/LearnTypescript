@@ -6,7 +6,7 @@ export default class Person {
     private _sex?: string;
     private _phoneNumber?: string;
 
-    constructor(name: string, age?: number, sex?: string, phoneNumber?: string) {
+    constructor(name: string = "unknown", age?: number, sex?: string, phoneNumber?: string) {
         this._name = name;
         this._age = age;
         this._sex = sex;
