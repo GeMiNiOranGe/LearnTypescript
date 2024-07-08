@@ -3,6 +3,7 @@
  * @param args Array of elements.
  * @returns `{element: numberOfDuplicate, ... }`
  */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function countDuplicateElements(...args: any[]): object {
     let initialValue = {};
     return args.reduce((accumulator, currentValue) => {

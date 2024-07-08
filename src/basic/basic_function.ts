@@ -5,5 +5,5 @@ function handleException(message: string): never {
 
 const printOnConsole = (message: string): void => {
     console.log(message);
-}
+};
 printOnConsole("Hello world!!!");
