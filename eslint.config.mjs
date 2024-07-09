@@ -13,9 +13,6 @@ export default [
         languageOptions: {
             globals: globals.node,
         },
-        ignores: [
-            "dist/**/*",
-        ],
         rules: {
             indent: ["error", 4, {
                 SwitchCase: 1,
