@@ -1,5 +1,5 @@
-import { NotPositiveNumberException } from "./custom_exception";
-import Person from "./person";
+import { NotPositiveNumberException } from "./custom_exception.js";
+import Person from "./person.js";
 
 export default class Student extends Person {
     private _grade?: number;

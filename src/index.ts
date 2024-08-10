@@ -1,4 +1,4 @@
-import { separateEachChar, alternateEachChar } from "./utilities";
+import { separateEachChar, alternateEachChar } from "./utilities.js";
 
 try {
     const FIRST_MESSAGE: string = "Hello world!!!";

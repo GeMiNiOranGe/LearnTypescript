@@ -4,6 +4,10 @@
     "description": "",
     "main": "index.ts",
     "scripts": {
+        "ts:build": "tsc && echo { \"type\": \"module\" } > dist/package.json",
+        "ts:clean": "rmdir /s /q dist",
+        "ts:build-and-run": "npm run ts:build && cls && node dist",
+        "ts:rebuild": "npm run ts:clean && npm run ts:build",
         "lint": "eslint .",
         "lint-src": "eslint . --ignore-pattern dist/",
         "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,7 +19,8 @@
         "eslint": "^9.6.0",
         "globals": "^15.8.0",
         "ts-node": "^10.9.2",
+        "tsx": "^4.17.0",
         "typescript": "^5.5.2",
-        "typescript-eslint": "^7.15.0"
+        "typescript-eslint": "^8.0.1"
     }
 }

@@ -1,5 +1,5 @@
-import Person from "./person";
-import Student from "./student";
+import Person from "./person.js";
+import Student from "./student.js";
 
 let person = new Person("Mike", 30);
 

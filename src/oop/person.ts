@@ -1,4 +1,4 @@
-import { NotPositiveNumberException } from "./custom_exception";
+import { NotPositiveNumberException } from "./custom_exception.js";
 
 export default class Person {
     private _name: string;
