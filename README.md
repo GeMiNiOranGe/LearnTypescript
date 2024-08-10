@@ -25,9 +25,17 @@ npm run ts:build-and-run
 ```
 
 - Use [`ts-node`](https://github.com/TypeStrong/ts-node):
+
+> **Note:** For `ts-node`, the `.js` extension must be removed when using the `import` statement in `.ts` files.
+
+**Option 1:** Remove `module` flag or set `"module": "CommonJS"` in [`tsconfig`](tsconfig.json).
+
 ```bash
 npx ts-node .\src\index.ts
 ```
-**Note:**
-1. When using `ts-node`, must remove `.js` extension when using `import` statement
-2. Remove `module` flag or set `"module": "CommonJS"` in [`tsconfig`](tsconfig.json)
+
+**Option 2:** ignore [`tsconfig`](tsconfig.json). ([How to ignore tsconfig](https://github.com/TypeStrong/ts-node/issues/456#issuecomment-597851736))
+
+```bash
+npx ts-node --skip-project .\src\index.ts
+```
